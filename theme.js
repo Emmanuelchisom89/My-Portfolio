@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("dark-mode");
     document
       .querySelectorAll(
-        ".hero, .green, #my, #pro-link-btn, #hb-menu, .contact-btn, .pro, .project-image, #about, .contact-header, #contact-section, .contact_form, .skill, .skill-icon, .stack, .ft-icon"
+        ".hero, .green, #my, #pro-link-btn, #hb-menu, .contact-btn, .pro, .project-image, #about, .contact-header, #contact-section, .contact_form, .skill, .skill-icon, .stack, .ft-icon, .box"
       )
       .forEach((section) => {
         section.classList.add("dark-mode");
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.remove("dark-mode");
     document
       .querySelectorAll(
-        ".hero, .green, #my, #pro-link-btn, #hb-menu, .contact-btn, .pro, .project-image, #about, .contact-header, #contact-section, .contact_form, .skill, .skill-icon, .stack, .ft-icon"
+        ".hero, .green, #my, #pro-link-btn, #hb-menu, .contact-btn, .pro, .project-image, #about, .contact-header, #contact-section, .contact_form, .skill, .skill-icon, .stack, .ft-icon, .box"
       )
       .forEach((section) => {
         section.classList.remove("dark-mode");

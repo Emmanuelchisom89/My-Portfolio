@@ -62,3 +62,36 @@ const typed = new Typed(".typed", {
   backDelay: 1000,
   loop: false,
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init({
+    once: true, // Ensures animation happens only once
+  });
+});
+
+/* document.getElementById("toggleBtn").addEventListener("click", function () {
+  var extraText = document.querySelector(".extra-text");
+  if (extraText.style.display === "none") {
+    extraText.style.display = "block";
+    this.innerHTML = "<p>Show Less</p>";
+  } else {
+    extraText.style.display = "none";
+    this.innerHTML = "<p>Read More</p>";
+  }
+});
+ */
+
+document.addEventListener("DOMContentLoaded", function () {
+  let toggleBtn = document.getElementById("toggleBtn");
+  let extraText = document.querySelector(".extra-text");
+  let btnText = toggleBtn.querySelector("p");
+  toggleBtn.addEventListener("click", function () {
+    if (extraText.style.display === "none" || extraText.style.display === "") {
+      extraText.style.display = "block"; // Show the extra text
+      btnText.textContent = "Show Less"; // Change button text
+    } else {
+      extraText.style.display = "none"; // Hide the extra text
+      btnText.textContent = "Read More"; // Reset button text
+    }
+  });
+});
