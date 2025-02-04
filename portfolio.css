@@ -1494,6 +1494,9 @@ form .btn2 {
         display: none;
     }
 
+        .skill {
+            padding: 1rem 1.5rem;
+        }
 }
 
 
