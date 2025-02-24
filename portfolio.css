@@ -419,6 +419,10 @@ input:checked+.slider:before {
     color: #1A6230;
 }
 
+.pro {
+    padding-top: 1.5rem;
+}
+
 .pro-link {
     display: flex;
     justify-content: center;
@@ -450,7 +454,7 @@ input:checked+.slider:before {
  
 .bg-clp {
     background-color: #F5F5F5;
-    padding-top: 3.5rem;
+    padding-top: 2rem;
 }
 
 #projects {
